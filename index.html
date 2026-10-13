@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Enemy AI Uses Cover to Avoid Incoming Attacks</title>
+<meta name="description" content="Learn how enemies identify useful cover, evaluate incoming threats, and move between protected and exposed positions during combat.">
+<link rel="canonical" href=""><script>document.querySelector('link[rel="canonical"]').href=window.location.href;</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How Enemy AI Uses Cover to Avoid Incoming Attacks","publisher":{"@type":"Organization","name":"666cgame.net.pk"}}</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Literata:wght@300;600;700&family=Lato:wght@300;400&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Lato',sans-serif;font-weight:300;background:#faf8f4;color:#1a1810;line-height:1.88}
+.wide{background:#1a1810;padding:56px 28px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}
+.wide h1{font-family:'Literata',serif;font-size:2.3rem;font-weight:700;color:#f0e8d0;line-height:1.15}
+.wide-right p{color:#5a4a2a;font-size:.92rem;line-height:1.75}
+main{max-width:860px;margin:0 auto;padding:50px 28px 60px}
+.intro{font-size:1.1rem;color:#2a2018;margin-bottom:40px}
+.intro a{color:#7a4010;font-weight:700;text-decoration:none}
+h2{font-family:'Literata',serif;font-size:1.7rem;color:#1a1810;margin:44px 0 18px;font-weight:700}
+p{font-size:1.06rem;color:#3a3020;margin-bottom:18px}
+.cover-cycle{display:flex;gap:3px;margin:36px 0;align-items:stretch}
+.cc{flex:1;padding:22px 16px;text-align:center}
+.cc:nth-child(1){background:#f0ece4}
+.cc:nth-child(2){background:#e8e0d4}
+.cc:nth-child(3){background:#e0d8cc}
+.cc:nth-child(4){background:#d8d0c4}
+.cc h4{font-size:.82rem;font-weight:700;color:#1a1810;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
+.cc p{font-size:.88rem;color:#5a4a30;margin:0}
+.cc .icon{font-size:1.8rem;display:block;margin-bottom:10px}
+ul{padding-left:0;list-style:none;margin:24px 0}
+li{margin-bottom:14px;padding-left:22px;position:relative;font-size:1.05rem;color:#3a3020}
+li::before{content:'◆';position:absolute;left:0;color:#7a4010;font-size:.6rem;top:6px}
+footer{background:#1a1810;color:#4a3820;text-align:center;padding:22px;font-size:.85rem;margin-top:40px}
+@media(max-width:768px){.wide{grid-template-columns:1fr}.wide-right{display:none}main{padding:36px 18px}.cover-cycle{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wide">
+<h1>How Enemy AI Uses Cover to Avoid Incoming Attacks</h1>
+<div class="wide-right"><p>Identifying useful positions, evaluating threats, and choosing when to leave protection for an attack opportunity</p></div>
+</div>
+<main>
+<p class="intro">An enemy that stands in the open and takes every hit is not challenging — it is just a target. Enemies that use cover force the player to create openings rather than simply dealing sustained damage. Players who encounter tactical enemies in games through <a href="http://666cgame.net.pk">666c game download</a> will find that cover-using enemies require position management and patience rather than direct confrontation.</p>
+<p>Cover usage is a continuous cycle: evaluate threats, identify a protected position, move to that position, attack from it when safe, then reassess. The challenge is choosing when to leave cover — an enemy that never emerges from protection cannot do damage, while one that leaves too readily gains nothing from the cover behaviour.</p>
+<h2>The Cover Cycle</h2>
+<div class="cover-cycle">
+<div class="cc"><span class="icon">👁</span><h4>Threat Check</h4><p>Is incoming fire active? Is the player aiming? Is the enemy exposed? Threat detection drives the decision to seek cover.</p></div>
+<div class="cc"><span class="icon">📍</span><h4>Position Select</h4><p>Evaluate nearby cover objects. Score by protection level, firing angle, and approach safety. Select the highest-scoring available position.</p></div>
+<div class="cc"><span class="icon">🏃</span><h4>Move to Cover</h4><p>Navigate to the selected position. Check approach route for exposure. Arrive and immediately confirm protection angle.</p></div>
+<div class="cc"><span class="icon">🎯</span><h4>Peek and Fire</h4><p>From cover, check whether an attack is possible. Step out briefly, fire, and return. Evaluate whether to stay or reposition after each exchange.</p></div>
+</div>
+<h2>When to Leave Cover</h2>
+<p>The key decision in cover-based combat is when an enemy commits to leaving its protected position. Simply staying in cover forever is safe but ineffective. The enemy must identify an opportunity: the player is reloading, recovering from an action, occupied with another enemy, or has moved to a position that reduces the risk of leaving cover.</p>
+<p>This opportunity detection is what separates intelligent cover usage from reflexive hiding. An enemy that moves between cover positions as the player moves — maintaining a useful firing angle rather than retreating to the same spot — creates the impression of tactical awareness that makes combat genuinely engaging.</p>
+<ul>
+<li>Cover positions are scored on protection level, firing angle, and approach path safety</li>
+<li>Peek-and-fire behaviour allows the enemy to contribute offensively without abandoning protection</li>
+<li>Player opportunity windows — recovery, reload, distraction — drive the decision to leave cover</li>
+<li>Dynamic repositioning maintains useful firing angles as combat conditions change</li>
+</ul>
+</main>
+<footer>© 2026</footer>
+</body>
+</html>
